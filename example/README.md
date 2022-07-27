@@ -1,6 +1,6 @@
 # ann_dynamic_icon_example
 
-Demonstrates how to use the dynamic_icon plugin.
+Demonstrates how to use the ann_dynamic_icon plugin.
 
 ## Getting Started
 

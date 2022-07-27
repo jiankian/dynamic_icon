@@ -1,4 +1,4 @@
-# dynamic_icon
+# ann_dynamic_icon
 
 dynamically changing app launcher icon
 

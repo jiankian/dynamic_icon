@@ -11,4 +11,4 @@ PRODUCT_NAME = ann_dynamic_icon_example
 PRODUCT_BUNDLE_IDENTIFIER = cn.anline.flutter.dynamicicon.dynamicIconExample
 
 // The copyright displayed in application information
-PRODUCT_COPYRIGHT = Copyright © 2022 cn.anline.flutter.dynamic_icon. All rights reserved.
+PRODUCT_COPYRIGHT = Copyright © 2022 cn.anline.flutter.ann_dynamic_icon. All rights reserved.

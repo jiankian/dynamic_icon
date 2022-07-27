@@ -11,14 +11,14 @@ G_BEGIN_DECLS
 #define FLUTTER_PLUGIN_EXPORT
 #endif
 
-typedef struct _DynamicIconPlugin DynamicIconPlugin;
+typedef struct _AnnDynamicIconPlugin AnnDynamicIconPlugin;
 typedef struct {
   GObjectClass parent_class;
-} DynamicIconPluginClass;
+} AnnDynamicIconPluginClass;
 
-FLUTTER_PLUGIN_EXPORT GType dynamic_icon_plugin_get_type();
+FLUTTER_PLUGIN_EXPORT GType ann_dynamic_icon_plugin_get_type();
 
-FLUTTER_PLUGIN_EXPORT void dynamic_icon_plugin_register_with_registrar(
+FLUTTER_PLUGIN_EXPORT void ann_dynamic_icon_plugin_register_with_registrar(
     FlPluginRegistrar* registrar);
 
 G_END_DECLS

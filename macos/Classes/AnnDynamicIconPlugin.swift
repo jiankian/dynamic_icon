@@ -1,10 +1,10 @@
 import Cocoa
 import FlutterMacOS
 
-public class DynamicIconPlugin: NSObject, FlutterPlugin {
+public class AnnDynamicIconPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
-    let channel = FlutterMethodChannel(name: "dynamic_icon", binaryMessenger: registrar.messenger)
-    let instance = DynamicIconPlugin()
+    let channel = FlutterMethodChannel(name: "ann_dynamic_icon", binaryMessenger: registrar.messenger)
+    let instance = AnnDynamicIconPlugin()
     registrar.addMethodCallDelegate(instance, channel: channel)
   }
 

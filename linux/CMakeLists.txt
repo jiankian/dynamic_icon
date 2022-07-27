@@ -4,19 +4,19 @@
 cmake_minimum_required(VERSION 3.10)
 
 # Project-level configuration.
-set(PROJECT_NAME "dynamic_icon")
+set(PROJECT_NAME "ann_dynamic_icon")
 project(${PROJECT_NAME} LANGUAGES CXX)
 
 # This value is used when generating builds using this plugin, so it must
 # not be changed.
-set(PLUGIN_NAME "dynamic_icon_plugin")
+set(PLUGIN_NAME "ann_dynamic_icon_plugin")
 
 # Define the plugin library target. Its name must not be changed (see comment
 # on PLUGIN_NAME above).
 #
 # Any new source files that you add to the plugin should be added here.
 add_library(${PLUGIN_NAME} SHARED
-  "dynamic_icon_plugin.cc"
+  "ann_dynamic_icon_plugin.cc"
 )
 
 # Apply a standard set of build settings that are configured in the

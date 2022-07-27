@@ -13,17 +13,17 @@
 #include <memory>
 #include <sstream>
 
-namespace dynamic_icon {
+namespace ann_dynamic_icon {
 
 // static
-void DynamicIconPlugin::RegisterWithRegistrar(
+void AnnDynamicIconPlugin::RegisterWithRegistrar(
     flutter::PluginRegistrarWindows *registrar) {
   auto channel =
       std::make_unique<flutter::MethodChannel<flutter::EncodableValue>>(
-          registrar->messenger(), "dynamic_icon",
+          registrar->messenger(), "ann_dynamic_icon",
           &flutter::StandardMethodCodec::GetInstance());
 
-  auto plugin = std::make_unique<DynamicIconPlugin>();
+  auto plugin = std::make_unique<AnnDynamicIconPlugin>();
 
   channel->SetMethodCallHandler(
       [plugin_pointer = plugin.get()](const auto &call, auto result) {
@@ -33,11 +33,11 @@ void DynamicIconPlugin::RegisterWithRegistrar(
   registrar->AddPlugin(std::move(plugin));
 }
 
-DynamicIconPlugin::DynamicIconPlugin() {}
+AnnDynamicIconPlugin::AnnDynamicIconPlugin() {}
 
-DynamicIconPlugin::~DynamicIconPlugin() {}
+AnnDynamicIconPlugin::~AnnDynamicIconPlugin() {}
 
-void DynamicIconPlugin::HandleMethodCall(
+void AnnDynamicIconPlugin::HandleMethodCall(
     const flutter::MethodCall<flutter::EncodableValue> &method_call,
     std::unique_ptr<flutter::MethodResult<flutter::EncodableValue>> result) {
   if (method_call.method_name().compare("getPlatformVersion") == 0) {
@@ -56,4 +56,4 @@ void DynamicIconPlugin::HandleMethodCall(
   }
 }
 
-}  // namespace dynamic_icon
+}  // namespace ann_dynamic_icon

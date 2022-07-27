@@ -7,7 +7,7 @@ import 'ann_dynamic_icon_platform_interface.dart';
 class MethodChannelDynamicIcon extends AnnDynamicIconPlatform {
   /// The method channel used to interact with the native platform.
   @visibleForTesting
-  final methodChannel = const MethodChannel('dynamic_icon');
+  final methodChannel = const MethodChannel('ann_dynamic_icon');
 
   @override
   Future<String?> getPlatformVersion() async {

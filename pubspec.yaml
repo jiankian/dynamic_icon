@@ -1,6 +1,6 @@
 name: ann_dynamic_icon
 description: dynamically changing app launcher icon
-version: 0.0.1
+version: 0.0.2
 homepage: https://pub.dev/packages/ann_dynamic_icon
 
 environment:
@@ -37,19 +37,19 @@ flutter:
   plugin:
     platforms:
       android:
-        package: cn.anline.flutter.dynamic_icon.dynamic_icon
-        pluginClass: DynamicIconPlugin
+        package: cn.anline.flutter.ann_dynamic_icon
+        pluginClass: AnnDynamicIconPlugin
       ios:
-        pluginClass: DynamicIconPlugin
+        pluginClass: AnnDynamicIconPlugin
       linux:
-        pluginClass: DynamicIconPlugin
+        pluginClass: AnnDynamicIconPlugin
       macos:
-        pluginClass: DynamicIconPlugin
+        pluginClass: AnnDynamicIconPlugin
       windows:
-        pluginClass: DynamicIconPluginCApi
+        pluginClass: AnnDynamicIconPluginCApi
       web:
         pluginClass: DynamicIconWeb
-        fileName: dynamic_icon_web.dart
+        fileName: ann_dynamic_icon_web.dart
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:

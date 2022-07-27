@@ -13,7 +13,7 @@
 extern "C" {
 #endif
 
-FLUTTER_PLUGIN_EXPORT void DynamicIconPluginCApiRegisterWithRegistrar(
+FLUTTER_PLUGIN_EXPORT void AnnDynamicIconPluginCApiRegisterWithRegistrar(
     FlutterDesktopPluginRegistrarRef registrar);
 
 #if defined(__cplusplus)

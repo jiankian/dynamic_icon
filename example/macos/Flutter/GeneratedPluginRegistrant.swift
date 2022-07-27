@@ -8,5 +8,5 @@ import Foundation
 import ann_dynamic_icon
 
 func RegisterGeneratedPlugins(registry: FlutterPluginRegistry) {
-  DynamicIconPlugin.register(with: registry.registrar(forPlugin: "DynamicIconPlugin"))
+  AnnDynamicIconPlugin.register(with: registry.registrar(forPlugin: "AnnDynamicIconPlugin"))
 }

@@ -6,19 +6,19 @@
 
 #include <memory>
 
-namespace dynamic_icon {
+namespace ann_dynamic_icon {
 
-class DynamicIconPlugin : public flutter::Plugin {
+class AnnDynamicIconPlugin : public flutter::Plugin {
  public:
   static void RegisterWithRegistrar(flutter::PluginRegistrarWindows *registrar);
 
-  DynamicIconPlugin();
+  AnnDynamicIconPlugin();
 
-  virtual ~DynamicIconPlugin();
+  virtual ~AnnDynamicIconPlugin();
 
   // Disallow copy and assign.
-  DynamicIconPlugin(const DynamicIconPlugin&) = delete;
-  DynamicIconPlugin& operator=(const DynamicIconPlugin&) = delete;
+  AnnDynamicIconPlugin(const AnnDynamicIconPlugin&) = delete;
+  AnnDynamicIconPlugin& operator=(const AnnDynamicIconPlugin&) = delete;
 
  private:
   // Called when a method is called on this plugin's channel from Dart.
@@ -27,6 +27,6 @@ class DynamicIconPlugin : public flutter::Plugin {
       std::unique_ptr<flutter::MethodResult<flutter::EncodableValue>> result);
 };
 
-}  // namespace dynamic_icon
+}  // namespace ann_dynamic_icon
 
 #endif  // FLUTTER_PLUGIN_DYNAMIC_ICON_PLUGIN_H_

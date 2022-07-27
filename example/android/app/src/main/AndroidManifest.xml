@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="cn.anline.flutter.dynamic_icon.ann_dynamic_icon_example">
+    package="cn.anline.flutter.ann_dynamic_icon.ann_dynamic_icon_example">
    <application
         android:label="ann_dynamic_icon_example"
         android:name="${applicationName}"

@@ -1,4 +1,4 @@
-#include "include/dynamic_icon/dynamic_icon_plugin.h"
+#include "include/ann_dynamic_icon/dynamic_icon_plugin.h"
 
 #include <flutter_linux/flutter_linux.h>
 #include <gtk/gtk.h>
@@ -7,18 +7,18 @@
 #include <cstring>
 
 #define DYNAMIC_ICON_PLUGIN(obj) \
-  (G_TYPE_CHECK_INSTANCE_CAST((obj), dynamic_icon_plugin_get_type(), \
-                              DynamicIconPlugin))
+  (G_TYPE_CHECK_INSTANCE_CAST((obj), ann_dynamic_icon_plugin_get_type(), \
+                              AnnDynamicIconPlugin))
 
-struct _DynamicIconPlugin {
+struct _AnnDynamicIconPlugin {
   GObject parent_instance;
 };
 
-G_DEFINE_TYPE(DynamicIconPlugin, dynamic_icon_plugin, g_object_get_type())
+G_DEFINE_TYPE(AnnDynamicIconPlugin, ann_dynamic_icon_plugin, g_object_get_type())
 
 // Called when a method call is received from Flutter.
-static void dynamic_icon_plugin_handle_method_call(
-    DynamicIconPlugin* self,
+static void ann_dynamic_icon_plugin_handle_method_call(
+    AnnDynamicIconPlugin* self,
     FlMethodCall* method_call) {
   g_autoptr(FlMethodResponse) response = nullptr;
 
@@ -37,30 +37,30 @@ static void dynamic_icon_plugin_handle_method_call(
   fl_method_call_respond(method_call, response, nullptr);
 }
 
-static void dynamic_icon_plugin_dispose(GObject* object) {
+static void ann_dynamic_icon_plugin_dispose(GObject* object) {
   G_OBJECT_CLASS(dynamic_icon_plugin_parent_class)->dispose(object);
 }
 
-static void dynamic_icon_plugin_class_init(DynamicIconPluginClass* klass) {
-  G_OBJECT_CLASS(klass)->dispose = dynamic_icon_plugin_dispose;
+static void ann_dynamic_icon_plugin_class_init(DynamicIconPluginClass* klass) {
+  G_OBJECT_CLASS(klass)->dispose = ann_dynamic_icon_plugin_dispose;
 }
 
-static void dynamic_icon_plugin_init(DynamicIconPlugin* self) {}
+static void ann_dynamic_icon_plugin_init(AnnDynamicIconPlugin* self) {}
 
 static void method_call_cb(FlMethodChannel* channel, FlMethodCall* method_call,
                            gpointer user_data) {
-  DynamicIconPlugin* plugin = DYNAMIC_ICON_PLUGIN(user_data);
-  dynamic_icon_plugin_handle_method_call(plugin, method_call);
+  AnnDynamicIconPlugin* plugin = DYNAMIC_ICON_PLUGIN(user_data);
+  ann_dynamic_icon_plugin_handle_method_call(plugin, method_call);
 }
 
-void dynamic_icon_plugin_register_with_registrar(FlPluginRegistrar* registrar) {
-  DynamicIconPlugin* plugin = DYNAMIC_ICON_PLUGIN(
+void ann_dynamic_icon_plugin_register_with_registrar(FlPluginRegistrar* registrar) {
+  AnnDynamicIconPlugin* plugin = DYNAMIC_ICON_PLUGIN(
       g_object_new(dynamic_icon_plugin_get_type(), nullptr));
 
   g_autoptr(FlStandardMethodCodec) codec = fl_standard_method_codec_new();
   g_autoptr(FlMethodChannel) channel =
       fl_method_channel_new(fl_plugin_registrar_get_messenger(registrar),
-                            "dynamic_icon",
+                            "ann_dynamic_icon",
                             FL_METHOD_CODEC(codec));
   fl_method_channel_set_method_call_handler(channel, method_call_cb,
                                             g_object_ref(plugin),

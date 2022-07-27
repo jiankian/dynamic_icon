@@ -5,7 +5,7 @@
 cmake_minimum_required(VERSION 3.14)
 
 # Project-level configuration.
-set(PROJECT_NAME "dynamic_icon")
+set(PROJECT_NAME "ann_dynamic_icon")
 project(${PROJECT_NAME} LANGUAGES CXX)
 
 # This value is used when generating builds using this plugin, so it must
@@ -21,7 +21,7 @@ list(APPEND PLUGIN_SOURCES
 # Define the plugin library target. Its name must not be changed (see comment
 # on PLUGIN_NAME above).
 add_library(${PLUGIN_NAME} SHARED
-  "include/dynamic_icon/dynamic_icon_plugin_c_api.h"
+  "include/ann_dynamic_icon/dynamic_icon_plugin_c_api.h"
   "dynamic_icon_plugin_c_api.cpp"
   ${PLUGIN_SOURCES}
 )
