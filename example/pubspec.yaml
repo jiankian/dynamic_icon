@@ -1,4 +1,4 @@
-name: dynamic_icon_example
+name: ann_dynamic_icon_example
 description: Demonstrates how to use the dynamic_icon plugin.
 
 # The following line prevents the package from being accidentally published to
@@ -18,7 +18,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  dynamic_icon:
+  ann_dynamic_icon:
     # When depending on this package from a real application you should use:
     #   dynamic_icon: ^x.y.z
     # See https://dart.dev/tools/pub/dependencies#version-constraints

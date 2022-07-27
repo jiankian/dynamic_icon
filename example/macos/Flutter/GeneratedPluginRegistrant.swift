@@ -5,7 +5,7 @@
 import FlutterMacOS
 import Foundation
 
-import dynamic_icon
+import ann_dynamic_icon
 
 func RegisterGeneratedPlugins(registry: FlutterPluginRegistry) {
   DynamicIconPlugin.register(with: registry.registrar(forPlugin: "DynamicIconPlugin"))

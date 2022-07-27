@@ -1,4 +1,4 @@
-# dynamic_icon_example
+# ann_dynamic_icon_example
 
 Demonstrates how to use the dynamic_icon plugin.
 

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:flutter/services.dart';
-import 'package:dynamic_icon/dynamic_icon.dart';
+import 'package:ann_dynamic_icon/ann_dynamic_icon.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   String _platformVersion = 'Unknown';
-  final _dynamicIconPlugin = DynamicIcon();
+  final _annDynamicIconPlugin = AnnDynamicIcon();
 
   @override
   void initState() {
@@ -32,7 +32,7 @@ class _MyAppState extends State<MyApp> {
     // We also handle the message potentially returning null.
     try {
       platformVersion =
-          await _dynamicIconPlugin.getPlatformVersion() ?? 'Unknown platform version';
+          await _annDynamicIconPlugin.getPlatformVersion() ?? 'Unknown platform version';
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';
     }

@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="cn.anline.flutter.dynamic_icon.dynamic_icon_example">
+    package="cn.anline.flutter.dynamic_icon.ann_dynamic_icon_example">
    <application
-        android:label="dynamic_icon_example"
+        android:label="ann_dynamic_icon_example"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

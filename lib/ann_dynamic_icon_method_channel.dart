@@ -1,10 +1,10 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
-import 'dynamic_icon_platform_interface.dart';
+import 'ann_dynamic_icon_platform_interface.dart';
 
-/// An implementation of [DynamicIconPlatform] that uses method channels.
-class MethodChannelDynamicIcon extends DynamicIconPlatform {
+/// An implementation of [AnnDynamicIconPlatform] that uses method channels.
+class MethodChannelDynamicIcon extends AnnDynamicIconPlatform {
   /// The method channel used to interact with the native platform.
   @visibleForTesting
   final methodChannel = const MethodChannel('dynamic_icon');

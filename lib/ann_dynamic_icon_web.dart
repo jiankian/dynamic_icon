@@ -6,15 +6,15 @@ import 'dart:html' as html show window;
 
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 
-import 'dynamic_icon_platform_interface.dart';
+import 'ann_dynamic_icon_platform_interface.dart';
 
 /// A web implementation of the DynamicIconPlatform of the DynamicIcon plugin.
-class DynamicIconWeb extends DynamicIconPlatform {
+class AnnDynamicIconWeb extends AnnDynamicIconPlatform {
   /// Constructs a DynamicIconWeb
-  DynamicIconWeb();
+  AnnDynamicIconWeb();
 
   static void registerWith(Registrar registrar) {
-    DynamicIconPlatform.instance = DynamicIconWeb();
+    AnnDynamicIconPlatform.instance = AnnDynamicIconWeb();
   }
 
   /// Returns a [String] containing the version of the platform.
