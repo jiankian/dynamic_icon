@@ -1,6 +1,6 @@
 name: ann_dynamic_icon
 description: dynamically changing app launcher icon
-version: 0.0.2
+version: 0.0.3
 homepage: https://pub.dev/packages/ann_dynamic_icon
 
 environment:

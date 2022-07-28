@@ -1,4 +1,4 @@
-#include "dynamic_icon_plugin.h"
+#include "ann_dynamic_icon_plugin.h"
 
 // This must be included before many other Windows headers.
 #include <windows.h>

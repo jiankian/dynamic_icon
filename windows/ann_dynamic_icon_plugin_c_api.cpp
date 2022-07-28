@@ -1,8 +1,8 @@
-#include "include/ann_dynamic_icon/dynamic_icon_plugin_c_api.h"
+#include "include/ann_dynamic_icon/ann_dynamic_icon_plugin_c_api.h"
 
 #include <flutter/plugin_registrar_windows.h>
 
-#include "dynamic_icon_plugin.h"
+#include "ann_dynamic_icon_plugin.h"
 
 void AnnDynamicIconPluginCApiRegisterWithRegistrar(
     FlutterDesktopPluginRegistrarRef registrar) {

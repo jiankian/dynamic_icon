@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'ann_dynamic_icon'
-  s.version          = '0.0.1'
+  s.version          = '0.0.3'
   s.summary          = 'dynamically changing app launcher icon'
   s.description      = <<-DESC
 dynamically changing app launcher icon

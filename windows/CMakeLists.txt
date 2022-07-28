@@ -10,19 +10,19 @@ project(${PROJECT_NAME} LANGUAGES CXX)
 
 # This value is used when generating builds using this plugin, so it must
 # not be changed
-set(PLUGIN_NAME "dynamic_icon_plugin")
+set(PLUGIN_NAME "ann_dynamic_icon_plugin")
 
 # Any new source files that you add to the plugin should be added here.
 list(APPEND PLUGIN_SOURCES
-  "dynamic_icon_plugin.cpp"
-  "dynamic_icon_plugin.h"
+  "ann_dynamic_icon_plugin.cpp"
+  "ann_dynamic_icon_plugin.h"
 )
 
 # Define the plugin library target. Its name must not be changed (see comment
 # on PLUGIN_NAME above).
 add_library(${PLUGIN_NAME} SHARED
-  "include/ann_dynamic_icon/dynamic_icon_plugin_c_api.h"
-  "dynamic_icon_plugin_c_api.cpp"
+  "include/ann_dynamic_icon/ann_dynamic_icon_plugin_c_api.h"
+  "ann_dynamic_icon_plugin_c_api.cpp"
   ${PLUGIN_SOURCES}
 )
 

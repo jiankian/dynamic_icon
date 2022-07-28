@@ -1,4 +1,4 @@
-#include "include/ann_dynamic_icon/dynamic_icon_plugin.h"
+#include "include/ann_dynamic_icon/ann_dynamic_icon_plugin.h"
 
 #include <flutter_linux/flutter_linux.h>
 #include <gtk/gtk.h>
